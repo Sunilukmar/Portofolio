@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --electric-blue: #0066ff;
+    --neon-cyan: #00ffff;
+    --deep-purple: #6b46c1;
+    --emerald-green: #10b981;
+    --sunset-orange: #f59e0b;
+    --hot-pink: #ec4899;
+    --lime-green: #84cc16;
+    --royal-blue: #3b82f6;
+  }
+}
+
+@layer utilities {
+  .text-electric-blue {
+    color: #0066ff;
+  }
+  .text-neon-cyan {
+    color: #00ffff;
+  }
+  .text-deep-purple {
+    color: #6b46c1;
+  }
+  .text-emerald-green {
+    color: #10b981;
+  }
+  .text-sunset-orange {
+    color: #f59e0b;
+  }
+  .text-hot-pink {
+    color: #ec4899;
+  }
+  .text-lime-green {
+    color: #84cc16;
+  }
+  .text-royal-blue {
+    color: #3b82f6;
+  }
+
+  .bg-electric-blue {
+    background-color: #0066ff;
+  }
+  .bg-neon-cyan {
+    background-color: #00ffff;
+  }
+  .bg-deep-purple {
+    background-color: #6b46c1;
+  }
+  .bg-emerald-green {
+    background-color: #10b981;
+  }
+  .bg-sunset-orange {
+    background-color: #f59e0b;
+  }
+  .bg-hot-pink {
+    background-color: #ec4899;
+  }
+  .bg-lime-green {
+    background-color: #84cc16;
+  }
+  .bg-royal-blue {
+    background-color: #3b82f6;
+  }
+
+  .border-electric-blue {
+    border-color: #0066ff;
+  }
+  .border-neon-cyan {
+    border-color: #00ffff;
+  }
+  .border-deep-purple {
+    border-color: #6b46c1;
+  }
+  .border-emerald-green {
+    border-color: #10b981;
+  }
+  .border-sunset-orange {
+    border-color: #f59e0b;
+  }
+  .border-hot-pink {
+    border-color: #ec4899;
+  }
+  .border-lime-green {
+    border-color: #84cc16;
+  }
+  .border-royal-blue {
+    border-color: #3b82f6;
+  }
+
+  .from-electric-blue {
+    --tw-gradient-from: #0066ff;
+  }
+  .to-electric-blue {
+    --tw-gradient-to: #0066ff;
+  }
+  .via-electric-blue {
+    --tw-gradient-via: #0066ff;
+  }
+
+  .from-neon-cyan {
+    --tw-gradient-from: #00ffff;
+  }
+  .to-neon-cyan {
+    --tw-gradient-to: #00ffff;
+  }
+  .via-neon-cyan {
+    --tw-gradient-via: #00ffff;
+  }
+
+  .from-deep-purple {
+    --tw-gradient-from: #6b46c1;
+  }
+  .to-deep-purple {
+    --tw-gradient-to: #6b46c1;
+  }
+  .via-deep-purple {
+    --tw-gradient-via: #6b46c1;
+  }
+
+  .from-emerald-green {
+    --tw-gradient-from: #10b981;
+  }
+  .to-emerald-green {
+    --tw-gradient-to: #10b981;
+  }
+  .via-emerald-green {
+    --tw-gradient-via: #10b981;
+  }
+
+  .from-sunset-orange {
+    --tw-gradient-from: #f59e0b;
+  }
+  .to-sunset-orange {
+    --tw-gradient-to: #f59e0b;
+  }
+  .via-sunset-orange {
+    --tw-gradient-via: #f59e0b;
+  }
+
+  .from-hot-pink {
+    --tw-gradient-from: #ec4899;
+  }
+  .to-hot-pink {
+    --tw-gradient-to: #ec4899;
+  }
+  .via-hot-pink {
+    --tw-gradient-via: #ec4899;
+  }
+
+  .from-lime-green {
+    --tw-gradient-from: #84cc16;
+  }
+  .to-lime-green {
+    --tw-gradient-to: #84cc16;
+  }
+  .via-lime-green {
+    --tw-gradient-via: #84cc16;
+  }
+
+  .from-royal-blue {
+    --tw-gradient-from: #3b82f6;
+  }
+  .to-royal-blue {
+    --tw-gradient-to: #3b82f6;
+  }
+  .via-royal-blue {
+    --tw-gradient-via: #3b82f6;
+  }
+
+  .bg-300 {
+    background-size: 300% 300%;
+  }
+
+  .animate-gradient {
+    animation: gradient 3s ease infinite;
+  }
+
+  @keyframes gradient {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #0066ff, #00ffff);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #00ffff, #10b981);
+}
